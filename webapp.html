@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Web App</title>
+  <script src="webapp.js"></script>
+  <link href="webapp.css" rel="stylesheet" type="text/css"/>
+  <link rel="server_url" href="https://assessments.reliscore.com/api/cric-scores/" />
+</head>
+<body>
+  <div style="border:solid ; border-color: aqua; margin-top:15%; margin-left: 25%;  width:900px;  height:300px;" class="container" >
+
+  <form style="margin-left: 35%; margin-top:5%">
+    Source of data: 
+    <input id="src-test" type="radio" 
+           name="data-source" value="test" checked>  
+    <label for="src-local">Test Data</label>
+    <input id="src-server" type="radio" 
+    href="https://assessments.reliscore.com/api/cric-scores/" name="data-source" value="server" >  
+     <a href="https://assessments.reliscore.com/api/cric-scores/"></a> 
+    <label for="src-server">Server Data</label>
+  </form>
+
+  <div class="row">
+    <div  class="country">
+      <form style="margin-left: 35%; margin-top:20%">
+        The Country: <input class="country-input" 
+                            type="text" value="Pakistan"/>
+      </form>
+    </div>
+    <div  style="margin-left: 15%; margin-top:6%" class="average">
+      The Average: 77
+    </div> 
+    <div class="horiz-bar" style="width:154px;margin-top:6%">&nbsp;</div>
+  </div>
+  
+  <div class="row">
+    <div class="country">
+      <form style="margin-left: 35%; margin-top:5%"> 
+        The Country: <input class="country-input" 
+                            type="text" value="Australia"/>
+      </form>
+    </div>
+    <div style="margin-left: 15%; margin-top:3%" class="average">
+      The Average: 31
+    </div>
+    <div class="horiz-bar" style="width:62px ;margin-top:3%">&nbsp;</div>
+  </div>
+
+  <div class="row">
+    <div class="country">
+      <form style="margin-left: 35%; margin-top:5%">
+        The Country: <input class="country-input" 
+                            type="text" value="India"/>
+      </form>
+    </div>
+    <div style="margin-left: 15%; margin-top:4%"  class="average">
+      The Average: 60
+    </div>
+    <div class="horiz-bar" style="width:100px; margin-top:4%">&nbsp;</div>
+  </div>
+</div>
+</body>
+</html>
